@@ -3,7 +3,7 @@
 Grey uniformity seems to be the most visually obvious defect on TVs. You will often see reviews that 
 talk about this same concept under the name “Dirty Screen Effect.” This effect varies on each TV from 
 variations in assembly that cause pressures onto the LCD screen. People often refer to this as the 
-“Panel Lottery”. The motivation behind this small project is to see where my TCL65R635 purchased from 
+“Panel Lottery”. The motivation behind this small project is to see how my TCL65R635 purchased from 
 BestBuy on Black Friday 2021 objectively compares to RTING’s review to see if I’ve won the lottery:<br/>
 https://www.rtings.com/tv/reviews/tcl/6-series-r635-2020-qled
 
@@ -21,9 +21,9 @@ allow for a direct comparison I process various photos from past RTING tests reg
 through this application. Selecting TV models that vary throughout RTING’s 1-10 rating scale for grey 
 uniformity will allow us to construct a mapping of my applications output to RTING’s 1-10 scale.  
 
-I then take images of my store bought TCL65R635 using RTING’s 50% grey reference image projected onto the 
-screen from a USB flash drive. I run the captured images through the StdDev-Gaussian application which 
-performs a Gaussian filter and calculates a standard deviation output. 
+I then take images of my store bought TCL65R635 using RTING’s 50% grey reference image (50%_Gray_Uniformity_RTING.png) 
+projected onto the screen from a USB flash drive. I run the captured images through the StdDev-Gaussian.py application 
+which performs a Gaussian filter and calculates a standard deviation output. 
 
 I then determine a RTING’s 1-10 scale for my TCL65R635 using the constructed mapping. I can 
 then objectively compare my TCL65R635 to RTING’s TCL65R635 review to see if I’ve won the lottery.
@@ -34,11 +34,12 @@ standard deviation percentage of 4.192%. From the mapping we can see that this c
 rating of 7.5-7.6. 
 
 The RTING’s TCL 6 Series/R635 2020’s 50% grey image capture outputs a 4.056% from my application and 
-has a RTING score of 7.6.  I would say that 4.192% and a RTING score of 7.5-7.6 is very good. I’d say 
-I won the lottery.
+has a RTING score of 7.6.  I would say my TV having a 4.192% and a RTING score of 7.5-7.6 is very good. 
+
+I’d say I won the lottery.
 
 ## Requirements:
-- Python. I used Python 3.7.9 but any version of Python will work. 
+- Python. I used Python 3.7.9 but most version of Python will work. 
 
 - This application uses Pillow for image processing. To install use the following command on either Linux, 
 Windows, or macOS:<br/>
@@ -53,8 +54,10 @@ reference image from my TV before the Iphone performed auto-exposure which blew 
 slightly dim lighting conditions, not pitch black. After the image was taken I cropped it as close to the 
 edges of the screen as I could.
 
+My captured image is located under the name "TCLR635-BestBuy-BlackFriday2021.jpg"
+
 ## Mapping:
-The grey uniformity test images were pulled from the TV model’s review page and run though this application. 
+Grey uniformity test image captures were pulled from past TV model’s review pages and run though this application. 
 The captured images provided by RTING have already gone through the Gaussian filter so I use the StdDev.py 
 program instead which removes the Gaussian filter. StdDev.py and the images used for this mapping are located 
 within Remap-RTING-Scoring. 
