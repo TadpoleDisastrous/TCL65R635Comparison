@@ -7,7 +7,7 @@ variations in assembly that cause pressures onto the LCD screen. People often re
 BestBuy on Black Friday 2021 objectively compares to RTING’s review to see if I’ve won the lottery:
 https://www.rtings.com/tv/reviews/tcl/6-series-r635-2020-qled
 
-##Overview:
+## Overview:
 
 I follow RTING’s test procedure for grey uniformity given the information at:
 https://www.rtings.com/tv/tests/picture-quality/gray-uniformity-dirty-screen-effect-dse
@@ -28,7 +28,7 @@ performs a Gaussian filter and calculates a standard deviation output.
 I then determine a RTING’s 1-10 scale for my TCL65R635 using the constructed mapping. I can 
 then objectively compare my TCL65R635 to RTING’s TCL65R635 review to see if I’ve won the lottery.
 
-##Requirements:
+## Requirements:
 - Python. I used Python 3.7.9 but any version of Python will work. 
 
 - This application uses Pillow for image processing. To install use the following command on either Linux, 
@@ -37,14 +37,14 @@ Windows, or macOS:
 `python -m pip install --upgrade Pillow`
 
 
-##Image Capture:
+## Image Capture:
 RTING provide their camera settings used to capture the images used to calculate their standard deviation. 
 Unfortunately I don’t have a camera capable of doing this. I used an IPhone Xs and captured the 50% grey 
 reference image from my TV before the Iphone performed auto-exposure which blew out the image. I had 
 slightly dim lighting conditions, not pitch black. After the image was taken I cropped it as close to the 
 edges of the screen as I could.
 
-##Mapping:
+## Mapping:
 The grey uniformity test images were pulled from the TV model’s review page and run though this application. 
 The captured images provided by RTING have already gone through the Gaussian filter so I use the StdDev.py 
 program instead which removes the Gaussian filter. StdDev.py and the images used for this mapping are located 
