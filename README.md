@@ -4,12 +4,12 @@ Grey uniformity seems to be the most visually obvious defect on TVs. You will of
 talk about this same concept under the name “Dirty Screen Effect.” This effect varies on each TV from 
 variations in assembly that cause pressures onto the LCD screen. People often refer to this as the 
 “Panel Lottery”. The motivation behind this small project is to see where my TCL65R635 purchased from 
-BestBuy on Black Friday 2021 objectively compares to RTING’s review to see if I’ve won the lottery:
+BestBuy on Black Friday 2021 objectively compares to RTING’s review to see if I’ve won the lottery:<br/>
 https://www.rtings.com/tv/reviews/tcl/6-series-r635-2020-qled
 
 ## Overview:
 
-I follow RTING’s test procedure for grey uniformity given the information at:
+I follow RTING’s test procedure for grey uniformity given the information at:<br/>
 https://www.rtings.com/tv/tests/picture-quality/gray-uniformity-dirty-screen-effect-dse
 
 The standard deviation output does not match that of RTING. I can’t be certain exactly how they went 
@@ -28,12 +28,21 @@ performs a Gaussian filter and calculates a standard deviation output.
 I then determine a RTING’s 1-10 scale for my TCL65R635 using the constructed mapping. I can 
 then objectively compare my TCL65R635 to RTING’s TCL65R635 review to see if I’ve won the lottery.
 
+## Results:
+The captured image from my TCL65R635 purchased from BestBuy of the 50% grey reference image outputs a 
+standard deviation percentage of 4.192%. From the mapping we can see that this corresponds to a RTING 
+rating of 7.5-7.6. 
+
+The RTING’s TCL 6 Series/R635 2020’s 50% grey image capture outputs a 4.056% from my application and 
+has a RTING score of 7.6.  I would say that 4.192% and a RTING score of 7.5-7.6 is very good. I’d say 
+I won the lottery.
+
 ## Requirements:
 - Python. I used Python 3.7.9 but any version of Python will work. 
 
 - This application uses Pillow for image processing. To install use the following command on either Linux, 
-Windows, or macOS:
-`python -m pip install --upgrade pip`
+Windows, or macOS:<br/>
+`python -m pip install --upgrade pip`<br/>
 `python -m pip install --upgrade Pillow`
 
 
@@ -54,14 +63,14 @@ The following TVs were used and the following mapping was constructed:
 
 | TV-Model  | Std.py Output  | RTING 50% grey uniformity 1-10 rating |
 | :------------ |:---------------| :-----|
-| [LG NANO90](https://www.rtings.com/tv/reviews/lg/nano90-2020)      | 12.545 | 5.6 |
-| [Sony X750H](https://www.rtings.com/tv/reviews/sony/x750h)      | 10.842 | 6.4 |
-| [Vizio V Series](https://www.rtings.com/tv/reviews/vizio/v-series-2020)      | 6.896 | 6.9 |
-| [TCL 4 Series 2019](https://www.rtings.com/tv/reviews/tcl/4-series-2019)      | 5.257 | 7.4 |
-| [TCL 4 Series 2020](https://www.rtings.com/tv/reviews/tcl/4-series-2020)      | 4.543 | 7.5 |
-| [TCL 6 Series/R635](https://www.rtings.com/tv/reviews/tcl/6-series-r635-2020-qled)      | 4.056 | 7.6 |
-| [Hisense U6G](https://www.rtings.com/tv/reviews/hisense/u6g)      | 3.522 | 8.0 |
-| [Sony A9S OLED](https://www.rtings.com/tv/reviews/sony/a9s-oled)      | 1.993 | 8.4 |
+| [LG NANO90](https://www.rtings.com/tv/reviews/lg/nano90-2020)      | 12.545% | 5.6 |
+| [Sony X750H](https://www.rtings.com/tv/reviews/sony/x750h)      | 10.842% | 6.4 |
+| [Vizio V Series](https://www.rtings.com/tv/reviews/vizio/v-series-2020)      | 6.896% | 6.9 |
+| [TCL 4 Series 2019](https://www.rtings.com/tv/reviews/tcl/4-series-2019)      | 5.257% | 7.4 |
+| [TCL 4 Series 2020](https://www.rtings.com/tv/reviews/tcl/4-series-2020)      | 4.543% | 7.5 |
+| [TCL 6 Series/R635](https://www.rtings.com/tv/reviews/tcl/6-series-r635-2020-qled)      | 4.056% | 7.6 |
+| [Hisense U6G](https://www.rtings.com/tv/reviews/hisense/u6g)      | 3.522% | 8.0 |
+| [Sony A9S OLED](https://www.rtings.com/tv/reviews/sony/a9s-oled)      | 1.993% | 8.4 |
 
 
 
